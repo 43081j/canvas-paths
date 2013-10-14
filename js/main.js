@@ -18,8 +18,6 @@ $(function() {
 					b = Math.round(random(0, 255));
 				return 'rgb(' + r + ', ' + g + ', ' + b + ')';
 			};
-			this.fillStyle = 'black';
-			this.fillRect(0, 0, this.width, this.height);
 			this.fillStyle = this.strokeStyle = this._colour;
 			$('.tools-stop').click(function() {
 				self._ticker.queue = [];
@@ -73,7 +71,7 @@ $(function() {
 				branch.directionY = directionY;
 			}
 		},
-		click: function() {
+		touchend: function() {
 			for(var i = 0; i < this.touches.length; i++) {
 				var touch = this.touches[i];
 				this.beginPath();
