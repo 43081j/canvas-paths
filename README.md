@@ -1,4 +1,4 @@
-canvas-paths
+HTML5 Pathways
 ============
 
-HTML5 randomly generated pathways on a canvas.
+Randomly generated pathways of randomly chosen colours using HTML5 canvas.
