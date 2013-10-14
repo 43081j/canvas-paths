@@ -71,7 +71,7 @@ $(function() {
 				branch.directionY = directionY;
 			}
 		},
-		touchend: function() {
+		touchstart: function(e) {
 			for(var i = 0; i < this.touches.length; i++) {
 				var touch = this.touches[i];
 				this.beginPath();
